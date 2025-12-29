@@ -20,5 +20,16 @@ spec:
       backendRefs:
         - name: kserve-controller-manager-service
           port: 8443
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /kserve/webhook
+      filters:
+        - type: URLRewrite
+          urlRewrite:
+            path:
+              type: ReplacePrefixMatch
+              replacePrefixMatch: /
+      backendRefs:
         - name: kserve-webhook-server-service
           port: 443
