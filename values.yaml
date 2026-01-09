@@ -171,7 +171,7 @@ kserve:
       # -- HTTP endpoint url scheme.
       urlScheme: http
 
-      pathTemplate: "{{ .Namespace }}/{{ .Name }}"
+      pathTemplate: "/serving/{{ .Namespace }}/{{ .Name }}"
 
       # -- DisableIstioVirtualHost controls whether to use istio as network layer for top level component routing or path based routing.
       # This configuration is only applicable for Serverless mode, when disabled Istio is no longer required.
