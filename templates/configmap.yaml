@@ -633,7 +633,7 @@ data:
         "urlScheme": "{{ .Values.kserve.controller.gateway.urlScheme }}",
         "disableIstioVirtualHost": {{ .Values.kserve.controller.gateway.disableIstioVirtualHost }},
         "disableIngressCreation": {{ .Values.kserve.controller.gateway.disableIngressCreation }},
-        "pathTemplate": {{ .Values.kserve.controller.gateway.pathTemplate }},
+        "pathTemplate": "{{ .Values.kserve.controller.gateway.pathTemplate }}"
     }
   logger: |-
     {
