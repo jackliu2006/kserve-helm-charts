@@ -176,7 +176,7 @@ kserve:
       disableIstioVirtualHost: true
 
       # -- Whether to disable ingress creation for RawDeployment mode.
-      disableIngressCreation: true
+      disableIngressCreation: false
 
       localGateway:
         # -- localGateway specifies the gateway which handles the network traffic within the cluster.
@@ -270,10 +270,10 @@ kserve:
     resources:
       limits:
         cpu: 100m
-        memory: 300Mi
+        memory: 100Mi
       requests:
         cpu: 100m
-        memory: 300Mi
+        memory: 100Mi
     # -- Indicates whether to create an addressable resolver ClusterRole for Knative Eventing.
     # This ClusterRole grants the necessary permissions for the Knative's DomainMapping reconciler to resolve InferenceService addressables.
     knativeAddressableResolver:
