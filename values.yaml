@@ -176,7 +176,7 @@ kserve:
       disableIstioVirtualHost: true
 
       # -- Whether to disable ingress creation for RawDeployment mode.
-      disableIngressCreation: false
+      disableIngressCreation: true
 
       localGateway:
         # -- localGateway specifies the gateway which handles the network traffic within the cluster.
