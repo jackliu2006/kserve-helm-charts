@@ -5,7 +5,7 @@ metadata:
   name: kserve-ingress-gateway
   namespace: {{ .Release.Namespace }}
 spec:
-  gatewayClassName: envoy
+  gatewayClassName: kong
   listeners:
    - name: http
      port: 80
