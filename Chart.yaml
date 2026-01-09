@@ -6,4 +6,4 @@ keywords:
 name: kserve
 sources:
 - http://github.com/kserve/kserve
-version: v0.16.0
+version: 0.16.0
